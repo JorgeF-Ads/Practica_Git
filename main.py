@@ -17,3 +17,11 @@ for estudiante in estudiantes:
     print("ESTUDIANTES REGISTRADOS")
     for estudiante in estudiantes:
         print(estudiante)
+
+
+def calcular_promedio(calificaciones):
+    if not calificaciones:
+        return 0
+    return sum(calificaciones) / len(calificaciones)
+
+print(calcular_promedio([8, 9, 10, 7]))
